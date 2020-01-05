@@ -2,6 +2,7 @@ dependencies:
   '@commitlint/cli': 7.6.1
   '@commitlint/config-conventional': 7.6.0
   '@rush-temp/eslint-helpers': 'file:projects/eslint-helpers.tgz'
+  '@rush-temp/eslint-plugin-security-nodejs': 'file:projects/eslint-plugin-security-nodejs.tgz'
   '@semantic-release/changelog': 3.0.6
   '@semantic-release/commit-analyzer': 6.3.3
   '@semantic-release/git': 7.0.18
@@ -582,7 +583,7 @@ packages:
       aggregate-error: 3.0.1
       fs-extra: 8.1.0
       lodash: 4.17.15
-      semantic-release: 15.14.0
+      semantic-release: /semantic-release/15.14.0/semantic-release@15.14.0
     dev: false
     engines:
       node: '>=8.16'
@@ -614,7 +615,7 @@ packages:
       debug: 4.1.1
       import-from: 3.0.0
       lodash: 4.17.15
-      semantic-release: 15.14.0
+      semantic-release: /semantic-release/15.14.0/semantic-release@15.14.0
     dev: false
     engines:
       node: '>=8.16'
@@ -658,7 +659,7 @@ packages:
       lodash: 4.17.15
       micromatch: 4.0.2
       p-reduce: 2.1.0
-      semantic-release: 15.14.0
+      semantic-release: /semantic-release/15.14.0/semantic-release@15.14.0
     dev: false
     engines:
       node: '>=8.16'
@@ -709,7 +710,7 @@ packages:
       mime: 2.4.4
       p-filter: 2.1.0
       p-retry: 4.2.0
-      semantic-release: 15.14.0
+      semantic-release: /semantic-release/15.14.0/semantic-release@15.14.0
       url-join: 4.0.1
     dev: false
     engines:
@@ -753,7 +754,7 @@ packages:
       rc: 1.2.8
       read-pkg: 5.2.0
       registry-auth-token: 4.0.0
-      semantic-release: 15.14.0
+      semantic-release: /semantic-release/15.14.0/semantic-release@15.14.0
       tempy: 0.3.0
     dev: false
     engines:
@@ -794,7 +795,7 @@ packages:
       into-stream: 5.1.1
       lodash: 4.17.15
       read-pkg-up: 7.0.1
-      semantic-release: 15.14.0
+      semantic-release: /semantic-release/15.14.0/semantic-release@15.14.0
     dev: false
     engines:
       node: '>=8.16'
@@ -2599,6 +2600,21 @@ packages:
       integrity: sha512-Q8t2YZ+0e0pc7NRVj3B4tSQ9rim1oi4Fh46k2xhJ2qOiEwhQfdjyEQddWdj7ZFaKmU+5104vn1qrcjEPWq+bgQ==
   /eslint-config-standard/13.0.1:
     dev: false
+    peerDependencies:
+      eslint: '>=6.0.1'
+      eslint-plugin-import: '>=2.18.0'
+      eslint-plugin-node: '>=9.1.0'
+      eslint-plugin-promise: '>=4.2.1'
+      eslint-plugin-standard: '>=4.0.0'
+    resolution:
+      integrity: sha512-zLKp4QOgq6JFgRm1dDCVv1Iu0P5uZ4v5Wa4DTOkg2RFMxdCX/9Qf7lz9ezRj2dBRa955cWQF/O/LWEiYWAHbTw==
+  /eslint-config-standard/13.0.1/12fab56e1b6f8ec7d69e94eb26765e3a:
+    dependencies:
+      eslint-plugin-import: 2.19.1
+      eslint-plugin-node: 9.2.0
+      eslint-plugin-standard: 4.0.1
+    dev: false
+    id: registry.npmjs.org/eslint-config-standard/13.0.1
     peerDependencies:
       eslint: '>=6.0.1'
       eslint-plugin-import: '>=2.18.0'
@@ -6480,6 +6496,41 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Cn43W35AOLY0RMcDbtwhJODJmWg6YCs1+R5jRQsTmmkEGzkV4B2F/QXkjVZpl4UbH91r93GGH0xhoq9kh7I5PA==
+  /semantic-release/15.14.0/semantic-release@15.14.0:
+    dependencies:
+      '@semantic-release/commit-analyzer': /@semantic-release/commit-analyzer/6.3.3/semantic-release@15.14.0
+      '@semantic-release/error': 2.2.0
+      '@semantic-release/github': /@semantic-release/github/5.5.5/semantic-release@15.14.0
+      '@semantic-release/npm': /@semantic-release/npm/5.3.5/semantic-release@15.14.0
+      '@semantic-release/release-notes-generator': /@semantic-release/release-notes-generator/7.3.5/semantic-release@15.14.0
+      aggregate-error: 3.0.1
+      cosmiconfig: 6.0.0
+      debug: 4.1.1
+      env-ci: 4.5.2
+      execa: 3.4.0
+      figures: 3.1.0
+      find-versions: 3.2.0
+      get-stream: 5.1.0
+      git-log-parser: 1.2.0
+      hook-std: 2.0.0
+      hosted-git-info: 3.0.2
+      lodash: 4.17.15
+      marked: 0.7.0
+      marked-terminal: /marked-terminal/3.3.0/marked@0.7.0
+      p-locate: 4.1.0
+      p-reduce: 2.1.0
+      read-pkg-up: 7.0.1
+      resolve-from: 5.0.0
+      semver: 6.3.0
+      signale: 1.4.0
+      yargs: 15.1.0
+    dev: false
+    engines:
+      node: '>=8.16'
+    hasBin: true
+    id: registry.npmjs.org/semantic-release/15.14.0
+    resolution:
+      integrity: sha512-Cn43W35AOLY0RMcDbtwhJODJmWg6YCs1+R5jRQsTmmkEGzkV4B2F/QXkjVZpl4UbH91r93GGH0xhoq9kh7I5PA==
   /semver-compare/1.0.0:
     dev: false
     resolution:
@@ -7522,6 +7573,42 @@ packages:
     dependencies:
       '@commitlint/cli': 7.6.1
       '@commitlint/config-conventional': 7.6.0
+      '@semantic-release/changelog': 3.0.6
+      '@semantic-release/commit-analyzer': 6.3.3
+      '@semantic-release/git': 7.0.18
+      '@semantic-release/github': 5.5.5
+      '@semantic-release/npm': 5.3.5
+      '@semantic-release/release-notes-generator': 7.3.5
+      babel-eslint: 10.0.3
+      babel-plugin-syntax-async-functions: 6.13.0
+      babel-plugin-transform-regenerator: 6.26.0
+      babel-preset-env: 1.7.0
+      cz-conventional-changelog: 1.2.0
+      eslint: 6.8.0
+      eslint-config-standard: /eslint-config-standard/13.0.1/12fab56e1b6f8ec7d69e94eb26765e3a
+      eslint-plugin-import: 2.19.1
+      eslint-plugin-jest: 22.21.0
+      eslint-plugin-node: 9.2.0
+      eslint-plugin-promise: 4.2.1
+      eslint-plugin-security: 1.4.0
+      eslint-plugin-standard: 4.0.1
+      husky: 3.1.0
+      jest: 24.9.0
+      lint-staged: 9.5.0
+      lockfile-lint: 2.2.0
+      open-cli: 5.0.0
+      prettier: 1.19.1
+      semantic-release: 15.14.0
+    dev: false
+    name: '@rush-temp/eslint-helpers'
+    resolution:
+      integrity: sha512-SMk1bTajjlrR/be0MGk6me2y+AUKhRJ0oUa3XC+T3lkvnakfviuGa+oYa1hk3bAuzbjRFDt+QQeFYnYoLZaZ3g==
+      tarball: 'file:projects/eslint-helpers.tgz'
+    version: 0.0.0
+  'file:projects/eslint-plugin-security-nodejs.tgz':
+    dependencies:
+      '@commitlint/cli': 7.6.1
+      '@commitlint/config-conventional': 7.6.0
       '@semantic-release/changelog': /@semantic-release/changelog/3.0.6/semantic-release@15.14.0
       '@semantic-release/commit-analyzer': /@semantic-release/commit-analyzer/6.3.3/semantic-release@15.14.0
       '@semantic-release/git': /@semantic-release/git/7.0.18/semantic-release@15.14.0
@@ -7547,12 +7634,12 @@ packages:
       lockfile-lint: 2.2.0
       open-cli: 5.0.0
       prettier: 1.19.1
-      semantic-release: 15.14.0
+      semantic-release: /semantic-release/15.14.0/semantic-release@15.14.0
     dev: false
-    name: '@rush-temp/eslint-helpers'
+    name: '@rush-temp/eslint-plugin-security-nodejs'
     resolution:
-      integrity: sha512-SMk1bTajjlrR/be0MGk6me2y+AUKhRJ0oUa3XC+T3lkvnakfviuGa+oYa1hk3bAuzbjRFDt+QQeFYnYoLZaZ3g==
-      tarball: 'file:projects/eslint-helpers.tgz'
+      integrity: sha512-1aaw+sEZ9krlHZbVzYSAw7lYwBDyReKOu1hijwwdPLqbVwRMpX1aH/JVHWuk8Z2Oq/QRgvokDSlMwwgDEWbnbA==
+      tarball: 'file:projects/eslint-plugin-security-nodejs.tgz'
     version: 0.0.0
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
@@ -7561,6 +7648,7 @@ specifiers:
   '@commitlint/cli': ^7.2.1
   '@commitlint/config-conventional': ^7.1.2
   '@rush-temp/eslint-helpers': 'file:./projects/eslint-helpers.tgz'
+  '@rush-temp/eslint-plugin-security-nodejs': 'file:./projects/eslint-plugin-security-nodejs.tgz'
   '@semantic-release/changelog': ^3.0.4
   '@semantic-release/commit-analyzer': ^6.2.0
   '@semantic-release/git': ^7.0.16

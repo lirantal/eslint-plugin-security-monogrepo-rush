@@ -302,6 +302,11 @@
       "packageName": "eslint-helpers",
       "projectFolder": "libs/eslint-helpers",
       "shouldPublish": true
+    },
+    {
+      "packageName": "eslint-plugin-security-nodejs",
+      "projectFolder": "plugins/eslint-plugin-security-nodejs",
+      "shouldPublish": true
     }
     // {
     //   /**
