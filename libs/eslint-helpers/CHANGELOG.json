@@ -1,0 +1,17 @@
+{
+  "name": "eslint-helpers",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "eslint-helpers_v1.0.1",
+      "date": "Sun, 05 Jan 2020 16:06:19 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Initial version of eslint helper"
+          }
+        ]
+      }
+    }
+  ]
+}
