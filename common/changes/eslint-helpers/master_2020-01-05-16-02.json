@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "eslint-helpers",
+      "comment": "Initial version of eslint helper",
+      "type": "patch"
+    }
+  ],
+  "packageName": "eslint-helpers",
+  "email": "liran.tal@gmail.com"
+}
